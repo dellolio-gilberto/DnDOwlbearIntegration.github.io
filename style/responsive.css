@@ -1,0 +1,86 @@
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #charsheet {
+    margin: 0;
+    padding: 10px;
+  }
+
+  #charsheet header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #charsheet header .charname,
+  #charsheet header .misc {
+    width: calc(100% - 12px);
+    border-radius: 10px;
+    border: 1px solid var(--inverseBackground);
+    margin-bottom: 10px;
+  }
+
+  #charsheet header .misc ul li {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  #charsheet main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #charsheet main section {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
+
+/* Navigation Footer */
+.sheet-nav-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--offBackground1);
+  border-top: 1px solid var(--inverseBackground);
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sheet-nav-footer button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--offBackground1);
+  border: 1px solid var(--inverseBackground);
+  color: var(--text);
+  transition: background-color 0.2s;
+}
+
+.sheet-nav-footer button:hover {
+  background-color: var(--offBackground3);
+}
+
+.sheet-nav-footer button:active {
+  background-color: var(--faintBlue);
+}
+
+.sheet-nav-footer button.active {
+  background-color: var(--faintBlue);
+}
+
+/* Add padding to prevent content from being hidden behind footer */
+body {
+  padding-bottom: 60px;
+}
+
+/* Page visibility control */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}

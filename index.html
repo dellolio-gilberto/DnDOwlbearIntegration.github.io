@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./style/pages/spellcasting.css" />
     <link rel="stylesheet" href="./style/pages/extras.css" />
     <link rel="stylesheet" href="./style/mediaQueries.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
     
     <!--Custom Elements: profButton-->
     <link rel="stylesheet" href="./customElements/profButton/style/color.css" />
@@ -32,7 +33,7 @@
     <!--Scripts-->
     <!--Custom Elements: profButton-->
     <script src="./customElements/profButton/main.js"></script>
-
+    <script src="./scripts/navigation.js"></script>
     <script src="./resources/data/version.js"></script>
     <script src="./scripts/jsonHandler.js"></script>
     <script src="./scripts/autoMath.js"></script>
@@ -1931,6 +1932,10 @@
         </div>
       </main>
     </div>
+      <nav class="sheet-nav-footer">
+  <button type="button" onclick="switchPage('front')" id="btn-front" class="active">Character</button>
+  <button type="button" onclick="switchPage('spellcasting')" id="btn-spells">Spells</button>
+    </nav>
     </form>
   </body>
 </html>
