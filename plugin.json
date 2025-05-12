@@ -2,7 +2,7 @@
   "id": "DnD5e-Sheet-OBRIntegration",
   "name": "D&D Character Sheet",
   "description": "A custom character sheet for Owlbear Rodeo.",
-  "icon": "https://github.com/dellolio-gilberto/SheetIntegrationOwl/blob/main/resources/assets/images/d%26dlogo.png",
+  "icon": "https://dellolio-gilberto.github.io/SheetIntegrationOwl/dndlogo.png",
   "url": "https://dellolio-gilberto.github.io/SheetIntegrationOwl/",
   "window": {
     "width": 450,
