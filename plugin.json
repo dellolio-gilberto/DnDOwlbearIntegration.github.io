@@ -1,4 +1,5 @@
 {
+  "manifest_version": 1,
   "id": "DnD5e-Sheet-OBRIntegration",
   "name": "D&D Character Sheet",
   "description": "A custom character sheet for Owlbear Rodeo.",
