@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+  #charsheet {
+    margin: 0;
+    padding: 10px;
+  }
+
+  #charsheet header .charname,
+  #charsheet header .misc {
+    width: calc(100% - 12px);
+    border-radius: 10px;
+    border: 1px solid var(--inverseBackground);
+    margin-bottom: 10px;
+  }
+
+  #charsheet header .misc ul li {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  #charsheet main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #charsheet main section {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  #charsheet header label{
+    display: none;
+  }
+}

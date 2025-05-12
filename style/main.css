@@ -210,3 +210,54 @@ body {
   width: 100%;
   font-size: 8px;
 }
+
+/* Navigation Footer */
+.sheet-nav-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: calc(8.5in - 2px);
+  background-color: var(--offBackground1);
+  border-top: 1px solid var(--inverseBackground);
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sheet-nav-footer button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--offBackground1);
+  border: 1px solid var(--inverseBackground);
+  color: var(--text);
+  transition: background-color 0.2s;
+}
+
+.sheet-nav-footer button:hover {
+  background-color: var(--offBackground3);
+}
+
+.sheet-nav-footer button:active {
+  background-color: var(--faintBlue);
+}
+
+.sheet-nav-footer button.active {
+  background-color: var(--faintBlue);
+}
+
+/* Add padding to prevent content from being hidden behind footer */
+body {
+  padding-bottom: 60px;
+}
+
+/* Page visibility control */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
