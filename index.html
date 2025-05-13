@@ -38,8 +38,11 @@
     <script src="./scripts/jsonHandler.js"></script>
     <script src="./scripts/autoMath.js"></script>
     <!--End Scripts-->
+    <script src="https://cdn.dddice.com/js/dddice-latest.js"></script>
+
   </head>
   <body onload="loadOptions()">
+  <canvas id="dddice" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1000;"></canvas>
     <form id="charsheet" onsubmit="return false">
       <div class="front-page page">
       <header>
@@ -92,6 +95,15 @@
             </li>
             <li>
               <button onclick="clearData()">Clear</button>
+            </li>
+            <li>
+             <button onclick="init()">Init Dice</button>
+            </li>
+            <li>
+              <button onclick="join()">Join Room</button>
+            </li>
+            <li>
+              <button onclick="roll()">Roll D20</button>
             </li>
           </ul>
         </section>
