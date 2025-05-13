@@ -68,7 +68,7 @@
 
         try {
             await dddiceInstance.roll([
-                { type: 'd20', theme: 'dddice-standard' }
+                { type: 'd20', theme: 'dddice-bees' }
             ]);
         } catch (error) {
             console.error('Error rolling dice:', error);
