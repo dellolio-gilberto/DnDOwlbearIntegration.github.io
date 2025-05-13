@@ -1,5 +1,4 @@
-<script>
-    // Canvas
+
     let canvas;
     
     // ThreeDDice class
@@ -81,4 +80,4 @@
         console.log('dddice instance:', dddice);
         console.log('window.ThreeDDice:', window.ThreeDDice);
     }
-</script>
+
